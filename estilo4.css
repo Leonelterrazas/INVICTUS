@@ -1,0 +1,217 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'heebo', sans-serif;
+    font-weight: 100;
+}
+body {
+    background: radial-gradient(circle,#fff,#bbb);
+}
+
+.nav__responsive-ul {
+    display: none;
+}
+.grid-contenido i {
+    color: #fff;
+}
+
+.caja1{
+    margin: auto;
+    width: 700px;
+    height: 700px;
+    background: rgb(199, 23, 23, .8);
+    opacity: .8;
+    border: 3px solid rgb(14, 14, 14);
+}
+.caja1 > p {
+    padding: 5px;
+    font-size: 50px;
+    color: #000;
+    font-family: 'anton', sans-serif;
+}
+.b {
+    color: aqua;
+    font-family: 'anton', sans-serif;
+}
+@media only screen and (max-width: 800px) {
+  .grid-contenido {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 5px 5px;
+  }
+}
+
+.nav {
+    background-color: rgb(0, 0, 0);
+}
+
+.nav__li {
+    display: inline-block;
+    padding: 18px;
+    color: #fff;
+}
+.nav__li:hover > a {
+    color: #bbb;
+}
+.nav__li:hover {
+    color: #bbb;
+}
+
+.nav__li a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav__li i {
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+.nav__responsive-buttom-container {
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background-color: rgb(0, 0, 0);
+    margin-top: -64px;
+    z-index: 100;
+}
+.nav__responsive-buttom {
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+    color: #fff;
+}
+.logo {
+    float: right;
+    margin-right: 50px;
+    height: 65px;
+}
+.form {
+    min-width: 400px;
+    flex: 2;
+    text-align: center;
+    padding: 30px;
+    order: 5;
+}
+.form__input {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-top: 3px solid #5dd;
+    background: rgb(31, 31, 31);
+    color: #fff;
+}
+.form__input:focus {
+    background: linear-gradient(to top, transparent, rgb(14, 14, 14));
+    outline: none;
+}
+.form textarea {
+    min-height: 150px;
+    resize: none;
+}
+.form_img {
+    margin: auto;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 400px;
+    order: 2;
+}
+
+.form_img img {
+    width: 50%;
+    margin: auto;
+}
+
+.form input[type="submit"] {
+    background-color: rgb(62, 189, 189);
+    border: none;
+    border-bottom: none;
+    padding: 12px;
+}
+.form input[type="submit"]:hover {
+    background-color: rgb(39, 129, 129);
+    border-bottom: none;
+    padding: 12px;
+}
+.form input[type="submit"]:focus {
+    background-color: rgb(62, 189, 189);
+}
+.form input[type="submit"]:active {
+    background: linear-gradient(to bottom, rgb(62, 189, 189), rgb(47, 152, 152));
+}
+
+#video {
+    padding: 5px 20px;
+    position:relative;
+    left: 700px;
+}
+
+.bienvenido-tt{
+    font-size: 250px;
+    padding-left: 115px;
+    margin: auto;
+    color: rgb(222, 18, 18);
+    text-shadow: 5px solid black;
+    font-family: 'anton', sans-serif;
+}
+
+@media only screen and (max-width: 500px){
+    .nav__ul {
+        display: none;
+    } .nav {
+        height: 37px;
+        width: 100%;
+    }
+    .nav__responsive-ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 37px;
+        padding-top: 27px;
+        height: 37px;
+    }
+    .nav__responsive-li {
+        width: 100%;
+        padding: 15px 20px;
+    }
+    .nav__responsive-li i {
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 60px;
+        color: #fff;
+    }
+    .nav__responsive-li a{
+        color: #fff;
+    }
+    .logo {
+        display: none;
+    }
+    .nav__li-container {
+    position: relative;
+    top: -1000px;
+    height: calc(100vh - 64px);
+    background: rgb(20, 20, 20);
+    transition: all 1s;
+    z-index: 1;
+    width: 80%;
+    padding-top: 27px;
+    }
+     .nav__responsive-ul:hover > .nav__li-container {
+        top: -27px;
+        
+    }
+    .bienvenido-tt{
+        padding: 10px;
+        font-size: 70px;
+    }
+    .caja1{
+        width: 400px;
+        height: 800px;
+    }
+    
+}
+    
